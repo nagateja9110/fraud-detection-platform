@@ -101,6 +101,14 @@ docker compose up --build
 This starts Postgres (`:5434`), Redis (`:6380`), the ML service (`:8001`),
 and the backend (`:8081`). API docs: `http://localhost:8081/swagger-ui.html`.
 
+### Live demo dashboard
+
+`http://localhost:8081/dashboard.html` -- a small live console: submit a
+transaction and see the fraud score / risk factors render in real time, plus
+a polling feed of recent transactions color-coded by risk level. Click
+"Simulate fraud burst" for a one-click demo of the velocity-driven escalation
+to CRITICAL/DECLINE.
+
 ### Try it
 
 ```bash
